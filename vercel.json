@@ -24,7 +24,7 @@
       ]
     },
     {
-      "source": "/(compressed (2)/.*|logo (2).png)",
+      "source": "/(compressed (2)/.*|and.png)",
       "headers": [
         {
           "key": "Cache-Control",
