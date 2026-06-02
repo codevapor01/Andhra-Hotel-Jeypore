@@ -2119,3 +2119,43 @@ header {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(197, 168, 128, 0.35);
 }
+
+/* === DESIGNER WATERMARK === */
+.designer-watermark {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+  letter-spacing: 0.05em;
+  opacity: 0.75;
+  transition: opacity 0.3s ease;
+}
+
+.designer-watermark:hover {
+  opacity: 1;
+}
+
+.designer-name {
+  color: var(--color-gold-bright);
+  font-weight: 500;
+}
+
+.designer-phone {
+  color: var(--color-gold);
+  text-decoration: underline;
+  text-decoration-color: rgba(197, 168, 128, 0.4);
+  transition: var(--transition-fast);
+  font-weight: 500;
+}
+
+.designer-phone:hover {
+  color: var(--color-gold-bright);
+  text-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
+}
+
+/* Wrap adjustments on mobile footer bottom row */
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
