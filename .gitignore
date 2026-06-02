@@ -1,0 +1,6 @@
+# Ignore local logs and OS junk
+output.txt
+.gemini/
+.antigravity/
+.DS_Store
+Thumbs.db

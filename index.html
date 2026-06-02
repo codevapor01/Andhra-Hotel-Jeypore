@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Andhra Hotel | Luxury Hotel & Fine Dining Menu</title>
+  <meta name="description"
+    content="Experience unparalleled luxury and gourmet dining at Andhra Hotel. Browse our custom rooms, elite amenities, and our chef-curated dining menu.">
+  <meta name="keywords"
+    content="luxury hotel, fine dining, gourmet menu, luxury suites, resort portfolio, five star hotel">
+  <meta name="author" content="Andhra Hotel">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Andhra Hotel | Luxury Hotel & Fine Dining Menu">
+  <meta property="og:description"
+    content="Indulge in absolute luxury and explore our world-class dining menu. Poached lobster, Wagyu beef, and fine champagne await.">
+  <meta property="og:image" content="compressed (2)/1.webp">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Andhra Hotel | Luxury Hotel & Fine Dining Menu">
+  <meta property="twitter:description"
+    content="Indulge in absolute luxury and explore our world-class dining menu. Poached lobster, Wagyu beef, and fine champagne await.">
+  <meta property="twitter:image" content="compressed (2)/1.webp">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Favicon Logo -->
+  <link rel="icon" type="image/png" href="logo (2).png">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+
+  <!-- JavaScript Files -->
+  <script type="module" src="app.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Admin Bar (Displayed when owner logs in) -->
+  <div class="admin-bar">
+    <div class="admin-bar-title"><i class="fas fa-user-shield"></i> Owner Administrator Portal</div>
+    <div style="display: flex; align-items: center;">
+      <button class="sync-db-btn" id="sync-db-btn"
+        title="Populate Google Sheets with all 100+ default luxury creations"><i class="fas fa-sync-alt"></i> Initialize
+        Sheets Menu</button>
+      <button class="logout-btn" id="logout-btn"><i class="fas fa-sign-out-alt"></i> Exit Admin Mode</button>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo" id="nav-logo">
+        <img src="logo (2).png" alt="Andhra Hotel Logo" class="nav-logo-img">
+        <span class="logo-text">ANDHRA HOTEL</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#menu-section">Culinary Menu</a></li>
+        <li><a href="#about-resort">About Us</a></li>
+      </ul>
+      <div class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Hero Section with Background Video -->
+    <section class="hero" id="hero">
+      <div class="hero-video-container">
+        <!-- Autoplaying, muted, inline video for seamless loop background -->
+        <video autoplay muted loop playsinline preload="auto">
+          <source src="compressed (2)/video.webm" type="video/webm">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-subtitle">Where Tradition Meets Taste</span>
+        <h1 class="hero-title">Discover the Art of <span>Refinement</span></h1>
+        <a href="#menu-section" class="cta-btn">View Menu</a>
+      </div>
+    </section>
+
+    <!-- Infinite Image Loop Marquee Section -->
+    <section class="marquee-section" id="loop-section" aria-label="Resort Highlights Preview">
+      <div class="marquee-container">
+        <div class="marquee-track">
+          <!-- Slide 1 to 5 -->
+          <div class="marquee-item">
+            <img src="compressed (2)/1.webp" alt="Oceanfront Balcony View">
+            <div class="marquee-item-overlay">
+
+            </div>
+          </div>
+          <div class="marquee-item">
+            <img src="compressed (2)/2.webp" alt="Luxury Bathroom Suite">
+            <div class="marquee-item-overlay">
+
+            </div>
+          </div>
+          <div class="marquee-item">
+            <img src="compressed (2)/3.webp" alt="Fine Dining Presentation">
+            <div class="marquee-item-overlay">
+
+            </div>
+          </div>
+          <div class="marquee-item">
+            <img src="compressed (2)/4.webp" alt="Infinity Poolside Cabana">
+            <div class="marquee-item-overlay">
+
+            </div>
+          </div>
+          <div class="marquee-item">
+            <img src="compressed (2)/5.webp" alt="Artisanal Dessert Detail">
+            <div class="marquee-item-overlay">
+
+            </div>
+          </div>
+
+          <!-- Duplicated Sequence (6 to 10) for Infinite, Gapless Animation Loop -->
+          <div class="marquee-item">
+            <img src="compressed (2)/1.webp" alt="Oceanfront Balcony View">
+            <div class="marquee-item-overlay">
+
+            </div>
+          </div>
+          <div class="marquee-item">
+            <img src="compressed (2)/2.webp" alt="Luxury Bathroom Suite">
+            <div class="marquee-item-overlay">
+
+            </div>
+          </div>
+          <div class="marquee-item">
+            <img src="compressed (2)/3.webp" alt="Fine Dining Presentation">
+            <div class="marquee-item-overlay">
+
+            </div>
+          </div>
+          <div class="marquee-item">
+            <img src="compressed (2)/4.webp" alt="Infinity Poolside Cabana">
+            <div class="marquee-item-overlay">
+
+
+            </div>
+          </div>
+          <div class="marquee-item">
+            <img src="compressed (2)/5.webp" alt="Artisanal Dessert Detail">
+            <div class="marquee-item-overlay">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dynamic Menu Section -->
+    <section class="section" id="menu-section">
+      <div class="section-header">
+        <span class="section-subtitle">Gastronomic Artistry</span>
+        <h2 class="section-title">The Culinary <span>Menu</span></h2>
+      </div>
+
+      <!-- Main Filter Categories -->
+      <div class="menu-filter-container" id="main-filter-container">
+        <button class="filter-btn active" data-category="Soups">Soups</button>
+        <button class="filter-btn" data-category="Starters">Starters</button>
+        <button class="filter-btn" data-category="Curries">Mains & Curries</button>
+        <button class="filter-btn" data-category="Breads">Breads</button>
+        <button class="filter-btn" data-category="Rice">Rice & Biriyani</button>
+      </div>
+
+      <!-- Dynamic Sub-Tabs Container -->
+      <div class="subtabs-container" id="subtabs-container"></div>
+
+      <!-- Search Input Container -->
+      <div class="menu-search-container">
+        <div class="search-input-wrapper">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" id="menu-search-input" placeholder="Search our signature dishes, ingredients, or tags...">
+          <button id="menu-search-clear-btn" aria-label="Clear Search" type="button">&times;</button>
+        </div>
+      </div>
+
+      <!-- Admin Add Item Button -->
+      <div class="admin-menu-controls">
+        <button class="add-item-btn" id="add-item-btn"><i class="fas fa-plus"></i> Add New Creation</button>
+      </div>
+
+      <!-- Dynamic Cards Grid -->
+      <div style="position: relative;">
+        <!-- Loading overlay -->
+        <div class="loader-wrapper" id="menu-loader">
+          <div class="loader"></div>
+        </div>
+        <div class="menu-grid" id="menu-grid">
+          <!-- Dynamically populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about-resort" style="border-top: 1px solid var(--color-border);">
+      <div class="portfolio-grid" style="align-items: start;">
+        <div class="portfolio-item">
+          <span class="section-subtitle about-subtitle">Our Heritage</span>
+          <h2 class="section-title about-title">A Legacy of <span>Excellence</span></h2>
+          <p class="portfolio-desc" style="font-size: 1.05rem; margin-bottom: 18px;">
+            Nestled in the heart of Jeypore, Koraput, Andhra Hotel stands as a symbol of warm hospitality, rich
+            traditions, and authentic culinary excellence. Inspired by the royal heritage of Jeypore and the vibrant
+            cultural spirit of Koraput, our journey is rooted in a commitment to serving guests with genuine care and
+            unforgettable experiences.
+          </p>
+
+          <p class="portfolio-desc" style="font-size: 1.05rem; margin-bottom: 18px;">
+            At Andhra Hotel, we honor this legacy by bringing together traditional flavors, exceptional service, and a
+            welcoming atmosphere. Our recipes are inspired by the rich culinary traditions of Andhra Pradesh and Odisha,
+            carefully crafted to offer guests an authentic taste of the region.
+          </p>
+
+          <p class="portfolio-desc"
+            style="font-size: 1rem; color: var(--color-gold); font-style: italic; font-family: var(--font-serif); font-size: 1.15rem;">
+            Andhra Hotel – Where Tradition Meets Taste, and Every Guest Becomes Family.
+          </p>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-img-wrapper" style="aspect-ratio: 1/1; max-width: 500px; justify-self: center;">
+            <img src="compressed (2)/5.webp" alt="Andhra Hotel - Jeypore, Koraput" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-grid">
+
+      <!-- Brand column -->
+      <div class="footer-col">
+        <h3 class="footer-logo">
+          <img src="logo (2).png" alt="Andhra Hotel Logo" class="footer-logo-img">
+          ANDHRA HOTEL
+        </h3>
+        <p class="footer-desc">Crafting high-end, premium moments of isolation, and dining masterpieces
+          for the elite travelers.</p>
+
+      </div>
+
+      <!-- Links column -->
+      <div class="footer-col">
+        <h4 class="footer-title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Home Base</a></li>
+          <li><a href="#menu-section">Gourmet Menu</a></li>
+          <li><a href="#about-resort">Heritage & Team</a></li>
+        </ul>
+      </div>
+
+      <!-- Hours column -->
+      <div class="footer-col">
+        <h4 class="footer-title">Dining Hours</h4>
+        <div class="footer-info">
+
+          <p><strong>Lunch Buffet:</strong> 12:00 PM - 3:30 PM</p>
+          <p><strong>Fine Dining:</strong> 06:30 PM - 11:00 PM</p>
+          <p style="color: var(--color-gold);">*Parties are also hosted.</p>
+        </div>
+      </div>
+
+      <!-- Contact column -->
+      <div class="footer-col">
+        <h4 class="footer-title">Location & Contact</h4>
+        <div class="footer-info">
+          <p><i class="fas fa-map-marker-alt"></i> Andhra Hotel, Mahatma Gandhi Rd, Mill Street, Jeypore, Odisha 764001
+          </p>
+          <p><i class="fas fa-phone"></i> +91 9090413979</p>
+          <p><i class="fas fa-envelope"></i> [EMAIL_ADDRESS]</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom footer row -->
+    <div class="footer-bottom">
+      <div>&copy; 2026 Andhra Hotel & Fine Dining. All Rights Reserved.</div>
+      <!-- Login option in footer -->
+      <div class="staff-portal-link" id="staff-portal-link"><i class="fas fa-lock"></i> Staff Portal</div>
+    </div>
+  </footer>
+
+  <!-- Owner Login Modal -->
+  <div class="modal-overlay" id="login-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Staff <span>Portal</span></h3>
+        <button class="modal-close-btn" id="login-close-btn" aria-label="Close Modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="admin-instructions">
+          To manage your live menu using <strong>Google Sheets</strong>, input the default password.
+          <br><br>
+          <em>* Note: If Google Sheets connection is not set up in <code>config.js</code>, edits will run in live
+            offline-preview mode.</em>
+        </div>
+        <form id="login-form">
+          <div class="form-group">
+            <label for="login-password">Enter Administrator Password</label>
+            <input type="password" id="login-password" class="form-input" placeholder="••••••••" required
+              autocomplete="current-password">
+            <div class="form-error" id="login-error"></div>
+          </div>
+          <button type="submit" class="form-submit-btn">Unlock Admin Access</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu Item Editor Modal (Add/Edit) -->
+  <div class="modal-overlay" id="item-modal">
+    <div class="modal-content wide">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-item-title">Add Menu Item</h3>
+        <button class="modal-close-btn" id="item-close-btn" aria-label="Close Modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="item-form">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="item-name">Creation Name</label>
+              <input type="text" id="item-name" class="form-input" placeholder="e.g., Truffle Butter Lobster Tail"
+                required>
+            </div>
+            <div class="form-group">
+              <label for="item-category">Category</label>
+              <select id="item-category" class="form-input" required>
+                <option value="Veg Soup">Veg Soup</option>
+                <option value="Non-Veg Soup">Non-Veg Soup</option>
+                <option value="Veg Starter">Veg Starter</option>
+                <option value="Chicken Starter">Chicken Starter</option>
+                <option value="Chinese Paneer Starter">Chinese Paneer Starter</option>
+                <option value="Chinese Mushroom Starter">Chinese Mushroom Starter</option>
+                <option value="Sea Food Snacks">Sea Food Snacks</option>
+                <option value="Tandoori Snacks">Tandoori Snacks</option>
+                <option value="Paneer Curry">Paneer Curry</option>
+                <option value="Mushroom Curry">Mushroom Curry</option>
+                <option value="Mix Veg">Mix Veg</option>
+                <option value="Veg Special Curry">Veg Special Curry</option>
+                <option value="Chicken">Chicken Curry</option>
+                <option value="Mutton">Mutton Curry</option>
+                <option value="Prawn">Prawn Curry</option>
+                <option value="Dal">Dal</option>
+                <option value="Roti & Naan">Roti & Naan</option>
+                <option value="Fried Rice">Fried Rice</option>
+                <option value="Traditional Rice">Traditional Rice</option>
+                <option value="Biriyani">Biriyani</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="item-price">Price (₹)</label>
+            <input type="number" id="item-price" step="1" min="0" class="form-input" placeholder="e.g., 181" required>
+          </div>
+
+          <div class="form-group">
+            <label for="item-desc">Description</label>
+            <textarea id="item-desc" class="form-input" rows="3"
+              placeholder="Describe the gourmet creation, ingredients, presentation style..." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="item-tags">Culinary Tags (comma separated)</label>
+            <input type="text" id="item-tags" class="form-input"
+              placeholder="e.g., Signature, Chef's Special, Gluten-Free">
+          </div>
+
+          <div class="form-checkbox-group">
+            <input type="checkbox" id="item-available" checked>
+            <label for="item-available">Available for Order</label>
+          </div>
+
+          <div class="form-error" id="item-error"></div>
+          <button type="submit" class="form-submit-btn">Save Culinary Creation</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+</body>
+
+</html>
