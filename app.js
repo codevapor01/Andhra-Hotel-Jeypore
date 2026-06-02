@@ -837,16 +837,11 @@ function setupParticleCanvas() {
   function drawParticles() {
     ctx.clearRect(0, 0, W, H);
     particles.forEach(p => {
-      ctx.save();
       ctx.globalAlpha = p.alpha;
-      // Gold color
       ctx.fillStyle = '#c5a880';
-      ctx.shadowColor = '#d4af37';
-      ctx.shadowBlur = 6;
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
       ctx.fill();
-      ctx.restore();
 
       p.x += p.vx;
       p.y += p.vy;
